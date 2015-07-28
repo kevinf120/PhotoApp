@@ -21,11 +21,8 @@ class CameraViewController: UIViewController {
         
         let devices = AVCaptureDevice.devices()
         
-        // Loop through all the capture devices on this phone
         for device in devices {
-            // Make sure this particular device supports video
             if (device.hasMediaType(AVMediaTypeVideo)) {
-                // Finally check the position and confirm we've got the back camera
                 if(device.position == AVCaptureDevicePosition.Back) {
                     captureDevice = device as? AVCaptureDevice
                     if captureDevice != nil {
@@ -89,4 +86,4 @@ class CameraViewController: UIViewController {
         previewLayer?.frame = self.view.layer.frame
         captureSession.startRunning()
     }
-}
+    }
