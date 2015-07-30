@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A3C71B91B62F59A0026C6D2 /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C71B81B62F59A0026C6D2 /* StyleConstants.swift */; };
+		0A62B2911B6987B20035A0F7 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62B2901B6987B20035A0F7 /* PhotoViewController.swift */; };
 		0A9D6F3A1B67DF83000E1293 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D6F391B67DF83000E1293 /* Note.swift */; };
 		0AC172D51B6006E3000DED70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172D41B6006E3000DED70 /* AppDelegate.swift */; };
 		0AC172D71B6006E3000DED70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172D61B6006E3000DED70 /* ViewController.swift */; };
@@ -15,7 +16,6 @@
 		0AC172DC1B6006E3000DED70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC172DB1B6006E3000DED70 /* Images.xcassets */; };
 		0AC172DF1B6006E3000DED70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AC172DD1B6006E3000DED70 /* LaunchScreen.xib */; };
 		0AC172EB1B6006E3000DED70 /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172EA1B6006E3000DED70 /* PhotoAppTests.swift */; };
-		0AC172F51B600914000DED70 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172F41B600914000DED70 /* CameraViewController.swift */; };
 		0AC172F71B600942000DED70 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172F61B600942000DED70 /* MapViewController.swift */; };
 		0AD485271B66DDE300AD3755 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD485261B66DDE300AD3755 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		0A3C71B81B62F59A0026C6D2 /* StyleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleConstants.swift; path = ../../../../Downloads/MakeSchoolNotes/MakeSchoolNotes/Constants/StyleConstants.swift; sourceTree = "<group>"; };
+		0A62B2901B6987B20035A0F7 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		0A9D6F391B67DF83000E1293 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		0AC172CF1B6006E3000DED70 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC172D31B6006E3000DED70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		0AC172E41B6006E3000DED70 /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC172E91B6006E3000DED70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AC172EA1B6006E3000DED70 /* PhotoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppTests.swift; sourceTree = "<group>"; };
-		0AC172F41B600914000DED70 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		0AC172F61B600942000DED70 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0AD485261B66DDE300AD3755 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		28A5560B0C77C46A8CD87364 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				0AC172D41B6006E3000DED70 /* AppDelegate.swift */,
-				0AC172F41B600914000DED70 /* CameraViewController.swift */,
+				0A62B2901B6987B20035A0F7 /* PhotoViewController.swift */,
 				0AC172D61B6006E3000DED70 /* ViewController.swift */,
 				0A9D6F391B67DF83000E1293 /* Note.swift */,
 				0AC172F61B600942000DED70 /* MapViewController.swift */,
@@ -287,7 +287,7 @@
 				0AC172D71B6006E3000DED70 /* ViewController.swift in Sources */,
 				0A9D6F3A1B67DF83000E1293 /* Note.swift in Sources */,
 				0AC172D51B6006E3000DED70 /* AppDelegate.swift in Sources */,
-				0AC172F51B600914000DED70 /* CameraViewController.swift in Sources */,
+				0A62B2911B6987B20035A0F7 /* PhotoViewController.swift in Sources */,
 				0AC172F71B600942000DED70 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

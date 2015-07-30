@@ -21,7 +21,7 @@ class TableViewCell: UITableViewCell {
         var formatter = NSDateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
         return formatter
-        }()
+    }()
     
     
     
