@@ -6,7 +6,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: GMSMapView!
     let locationManager = CLLocationManager()
     var camera: GMSCameraPosition!
-    
+    var photoTakingHelper: PhotoTakingHelper?
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -14,6 +15,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
+        photoTakingHelper = PhotoTakingHelper(viewController: self, callback: { (image: UIImage?) in
+            //self.image = image!
+        })
     }
     
     

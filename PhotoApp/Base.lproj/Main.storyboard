@@ -28,7 +28,7 @@
                                 <items>
                                     <barButtonItem title="Done" id="lMU-je-wdf">
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="eBT-qX-Wnz"/>
+                                            <segue destination="a8Y-0O-TsC" kind="unwind" unwindAction="unwindToVC:" id="aAe-l8-2tF"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -46,19 +46,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ni3-sc-Vjl">
-                        <barButtonItem key="leftBarButtonItem" title="Done" id="S0L-Ll-siF">
-                            <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="EBT-0q-rXT"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Done" id="S0L-Ll-siF"/>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="O1h-1S-MTd" id="d4M-G1-xkV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5XU-k4-Ch0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="a8Y-0O-TsC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="732" y="-519"/>
+            <point key="canvasLocation" x="692" y="-529"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -79,19 +76,19 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="534"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCell" rowHeight="72" id="rzN-Kt-mWW" customClass="TableViewCell" customModule="PhotoApp" customModuleProvider="target">
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoteCell" rowHeight="72" id="rzN-Kt-mWW" userLabel="NoteCell" customClass="TableViewCell" customModule="PhotoApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rzN-Kt-mWW" id="TxJ-gj-mj4">
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQw-HG-Qff" userLabel="titleLabel">
-                                                            <rect key="frame" x="15" y="21" width="97" height="30"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sWf-R3-1bD">
+                                                            <rect key="frame" x="13" y="21" width="554" height="30"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eje-Uk-cYi" userLabel="dateLabel">
-                                                            <rect key="frame" x="20" y="50" width="42" height="21"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eje-Uk-cYi">
+                                                            <rect key="frame" x="19" y="50" width="377" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -99,8 +96,8 @@
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="dateLabel" destination="eje-Uk-cYi" id="rRM-7C-RGg"/>
-                                                    <outlet property="titleLabel" destination="YQw-HG-Qff" id="XYM-bH-pV2"/>
+                                                    <outlet property="dateLabel" destination="eje-Uk-cYi" id="xfY-Ex-deN"/>
+                                                    <segue destination="khH-n9-jNU" kind="show" id="kH7-wK-rGs"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -116,7 +113,8 @@
                                     <barButtonItem systemItem="add" id="KvA-L0-cm4">
                                         <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
                                         <connections>
-                                            <segue destination="2MQ-Oe-OCz" kind="show" id="OKU-jy-IkY"/>
+                                            <action selector="Add:" destination="BYZ-38-t0r" id="7bX-mA-iZd"/>
+                                            <segue destination="khH-n9-jNU" kind="show" id="eV1-c7-dsy"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -133,6 +131,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Add" destination="KvA-L0-cm4" id="95o-gP-2Nn"/>
                         <outlet property="tableView" destination="S1E-uO-tw8" id="oYE-Fm-3A4"/>
                     </connections>
                 </viewController>
@@ -140,77 +139,8 @@
             </objects>
             <point key="canvasLocation" x="-30" y="229"/>
         </scene>
-        <!--Photo View Controller-->
-        <scene sceneID="B3Y-0Y-yyc">
-            <objects>
-                <viewController id="2MQ-Oe-OCz" customClass="PhotoViewController" customModule="PhotoApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jfL-yf-JVK"/>
-                        <viewControllerLayoutGuide type="bottom" id="3Bl-AE-cN1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="h3d-RK-70x">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTw-89-zaJ">
-                                <rect key="frame" x="276" y="535" width="49" height="49"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="49" id="oXp-kI-dRc"/>
-                                    <constraint firstAttribute="width" constant="49" id="zQJ-eE-YeE"/>
-                                </constraints>
-                                <state key="normal" image="Camera">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="khH-n9-jNU" kind="show" id="Ay4-W7-tN0"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rZ7-1E-YfL" userLabel="Image">
-                                <rect key="frame" x="0.0" y="60" width="600" height="465"/>
-                                <accessibility key="accessibilityConfiguration" label="Image"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="481" id="zKx-Cc-WD2"/>
-                                </constraints>
-                            </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahJ-SL-gya">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="P6H-ac-L5c"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem title="Cancel" id="SLB-OD-Mob">
-                                        <connections>
-                                            <segue destination="19F-g0-Lt5" kind="unwind" unwindAction="CameraViewController:" id="vPg-3l-pbC"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="mTw-89-zaJ" firstAttribute="centerX" secondItem="h3d-RK-70x" secondAttribute="centerX" id="95N-Ox-y8B"/>
-                            <constraint firstItem="rZ7-1E-YfL" firstAttribute="leading" secondItem="h3d-RK-70x" secondAttribute="leading" id="LoS-hk-kol"/>
-                            <constraint firstItem="mTw-89-zaJ" firstAttribute="centerX" secondItem="rZ7-1E-YfL" secondAttribute="centerX" id="YJA-RJ-JvK"/>
-                            <constraint firstItem="3Bl-AE-cN1" firstAttribute="top" secondItem="mTw-89-zaJ" secondAttribute="bottom" constant="16" id="bJD-hD-wgX"/>
-                            <constraint firstItem="rZ7-1E-YfL" firstAttribute="leading" secondItem="ahJ-SL-gya" secondAttribute="leading" id="lvr-7Z-Plf"/>
-                            <constraint firstItem="mTw-89-zaJ" firstAttribute="top" secondItem="rZ7-1E-YfL" secondAttribute="bottom" constant="10" id="qWX-3E-YYL"/>
-                            <constraint firstItem="mTw-89-zaJ" firstAttribute="centerX" secondItem="ahJ-SL-gya" secondAttribute="centerX" id="yPN-oB-FvT"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="Image" destination="rZ7-1E-YfL" id="9vb-JT-MCR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yLa-Pk-lPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="19F-g0-Lt5" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="732" y="245"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="Camera" width="100" height="100"/>
-    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eBT-qX-Wnz"/>
+        <segue reference="kH7-wK-rGs"/>
     </inferredMetricsTieBreakers>
 </document>

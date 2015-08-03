@@ -8,32 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		0A3C71B91B62F59A0026C6D2 /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C71B81B62F59A0026C6D2 /* StyleConstants.swift */; };
-		0A62B2911B6987B20035A0F7 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A62B2901B6987B20035A0F7 /* PhotoViewController.swift */; };
 		0A9D6F3A1B67DF83000E1293 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D6F391B67DF83000E1293 /* Note.swift */; };
+		0ABBF7BD1B6AAE1B00B7DF98 /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABBF7BC1B6AAE1B00B7DF98 /* PhotoTakingHelper.swift */; };
 		0AC172D51B6006E3000DED70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172D41B6006E3000DED70 /* AppDelegate.swift */; };
 		0AC172D71B6006E3000DED70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172D61B6006E3000DED70 /* ViewController.swift */; };
 		0AC172DA1B6006E3000DED70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC172D81B6006E3000DED70 /* Main.storyboard */; };
 		0AC172DC1B6006E3000DED70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC172DB1B6006E3000DED70 /* Images.xcassets */; };
 		0AC172DF1B6006E3000DED70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AC172DD1B6006E3000DED70 /* LaunchScreen.xib */; };
-		0AC172EB1B6006E3000DED70 /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172EA1B6006E3000DED70 /* PhotoAppTests.swift */; };
 		0AC172F71B600942000DED70 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172F61B600942000DED70 /* MapViewController.swift */; };
 		0AD485271B66DDE300AD3755 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD485261B66DDE300AD3755 /* TableViewCell.swift */; };
+		0AE9F9AE1B6C027C00EE65EE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE9F9AD1B6C027C00EE65EE /* Realm.framework */; };
+		0AE9F9AF1B6C027C00EE65EE /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE9F9AD1B6C027C00EE65EE /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0AE9F9B21B6C028A00EE65EE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE9F9B11B6C028A00EE65EE /* RealmSwift.framework */; };
+		0AE9F9B31B6C028A00EE65EE /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE9F9B11B6C028A00EE65EE /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0AC172E51B6006E3000DED70 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0AC172C71B6006E3000DED70 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0AC172CE1B6006E3000DED70;
-			remoteInfo = PhotoApp;
+/* Begin PBXCopyFilesBuildPhase section */
+		0AE9F9B01B6C027C00EE65EE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0AE9F9B31B6C028A00EE65EE /* RealmSwift.framework in Embed Frameworks */,
+				0AE9F9AF1B6C027C00EE65EE /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A3C71B81B62F59A0026C6D2 /* StyleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleConstants.swift; path = ../../../../Downloads/MakeSchoolNotes/MakeSchoolNotes/Constants/StyleConstants.swift; sourceTree = "<group>"; };
-		0A62B2901B6987B20035A0F7 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		0A9D6F391B67DF83000E1293 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		0ABBF7BC1B6AAE1B00B7DF98 /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
 		0AC172CF1B6006E3000DED70 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC172D31B6006E3000DED70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AC172D41B6006E3000DED70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,11 +49,12 @@
 		0AC172D91B6006E3000DED70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AC172DB1B6006E3000DED70 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0AC172DE1B6006E3000DED70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0AC172E41B6006E3000DED70 /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC172E91B6006E3000DED70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AC172EA1B6006E3000DED70 /* PhotoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppTests.swift; sourceTree = "<group>"; };
 		0AC172F61B600942000DED70 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0AD485261B66DDE300AD3755 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0AE9F9AD1B6C027C00EE65EE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../Downloads/realm-swift-0.94.0/ios/swift-1.2/Realm.framework"; sourceTree = "<group>"; };
+		0AE9F9B11B6C028A00EE65EE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../Downloads/realm-swift-0.94.0/ios/swift-1.2/RealmSwift.framework"; sourceTree = "<group>"; };
 		28A5560B0C77C46A8CD87364 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		305E560D7EB13E36B59AA97D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,13 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AC172E11B6006E3000DED70 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				0AE9F9B21B6C028A00EE65EE /* RealmSwift.framework in Frameworks */,
+				0AE9F9AE1B6C027C00EE65EE /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,8 @@
 		0AC172C61B6006E3000DED70 = {
 			isa = PBXGroup;
 			children = (
+				0AE9F9B11B6C028A00EE65EE /* RealmSwift.framework */,
+				0AE9F9AD1B6C027C00EE65EE /* Realm.framework */,
 				0AC172D11B6006E3000DED70 /* PhotoApp */,
 				0AC172E71B6006E3000DED70 /* PhotoAppTests */,
 				0AC172D01B6006E3000DED70 /* Products */,
@@ -83,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				0AC172CF1B6006E3000DED70 /* PhotoApp.app */,
-				0AC172E41B6006E3000DED70 /* PhotoAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,10 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				0AC172D41B6006E3000DED70 /* AppDelegate.swift */,
-				0A62B2901B6987B20035A0F7 /* PhotoViewController.swift */,
 				0AC172D61B6006E3000DED70 /* ViewController.swift */,
 				0A9D6F391B67DF83000E1293 /* Note.swift */,
 				0AC172F61B600942000DED70 /* MapViewController.swift */,
+				0ABBF7BC1B6AAE1B00B7DF98 /* PhotoTakingHelper.swift */,
 				0AC172D81B6006E3000DED70 /* Main.storyboard */,
 				0AD485261B66DDE300AD3755 /* TableViewCell.swift */,
 				0AC172DB1B6006E3000DED70 /* Images.xcassets */,
@@ -159,6 +164,7 @@
 				0AC172CC1B6006E3000DED70 /* Frameworks */,
 				0AC172CD1B6006E3000DED70 /* Resources */,
 				61EE861EBB404DEF19493896 /* Copy Pods Resources */,
+				0AE9F9B01B6C027C00EE65EE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,24 +174,6 @@
 			productName = PhotoApp;
 			productReference = 0AC172CF1B6006E3000DED70 /* PhotoApp.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0AC172E31B6006E3000DED70 /* PhotoAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AC172F11B6006E3000DED70 /* Build configuration list for PBXNativeTarget "PhotoAppTests" */;
-			buildPhases = (
-				0AC172E01B6006E3000DED70 /* Sources */,
-				0AC172E11B6006E3000DED70 /* Frameworks */,
-				0AC172E21B6006E3000DED70 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0AC172E61B6006E3000DED70 /* PBXTargetDependency */,
-			);
-			name = PhotoAppTests;
-			productName = PhotoAppTests;
-			productReference = 0AC172E41B6006E3000DED70 /* PhotoAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -198,10 +186,11 @@
 				TargetAttributes = {
 					0AC172CE1B6006E3000DED70 = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					0AC172E31B6006E3000DED70 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = 0AC172CE1B6006E3000DED70;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -219,7 +208,6 @@
 			projectRoot = "";
 			targets = (
 				0AC172CE1B6006E3000DED70 /* PhotoApp */,
-				0AC172E31B6006E3000DED70 /* PhotoAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,13 +220,6 @@
 				0AC172DA1B6006E3000DED70 /* Main.storyboard in Resources */,
 				0AC172DF1B6006E3000DED70 /* LaunchScreen.xib in Resources */,
 				0AC172DC1B6006E3000DED70 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AC172E21B6006E3000DED70 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,29 +267,13 @@
 				0A3C71B91B62F59A0026C6D2 /* StyleConstants.swift in Sources */,
 				0AC172D71B6006E3000DED70 /* ViewController.swift in Sources */,
 				0A9D6F3A1B67DF83000E1293 /* Note.swift in Sources */,
+				0ABBF7BD1B6AAE1B00B7DF98 /* PhotoTakingHelper.swift in Sources */,
 				0AC172D51B6006E3000DED70 /* AppDelegate.swift in Sources */,
-				0A62B2911B6987B20035A0F7 /* PhotoViewController.swift in Sources */,
 				0AC172F71B600942000DED70 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AC172E01B6006E3000DED70 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AC172EB1B6006E3000DED70 /* PhotoAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0AC172E61B6006E3000DED70 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0AC172CE1B6006E3000DED70 /* PhotoApp */;
-			targetProxy = 0AC172E51B6006E3000DED70 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0AC172D81B6006E3000DED70 /* Main.storyboard */ = {
@@ -423,6 +388,12 @@
 					"/Users/Kevin/Downloads/realm-swift-0.93.2/ios",
 					"/Users/Kevin/Downloads/realm-swift-0.93.2/osx",
 					/Users/Kevin/Downloads/MakeSchoolNotes,
+					"/Users/Kevin/Downloads/realm-swift-0.94.0/ios/swift-1.2",
+					"/Users/Kevin/Downloads/realm-swift-0.94.0/ios/swift-2.0",
+					"/Users/Kevin/Downloads/realm-swift-0.94.0/osx/swift-1.2",
+					"/Users/Kevin/Downloads/realm-swift-0.94.0/osx/swift-2.0",
+					"/Users/Kevin/Downloads/realm-swift-0.94.0/watchos",
+					"/Users/Kevin/Downloads/Make-School-Notes-master",
 				);
 				INFOPLIST_FILE = PhotoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -440,44 +411,16 @@
 					"/Users/Kevin/Downloads/realm-swift-0.93.2/ios",
 					"/Users/Kevin/Downloads/realm-swift-0.93.2/osx",
 					/Users/Kevin/Downloads/MakeSchoolNotes,
+					"/Users/Kevin/Downloads/realm-swift-0.94.0/ios/swift-1.2",
+					"/Users/Kevin/Downloads/realm-swift-0.94.0/ios/swift-2.0",
+					"/Users/Kevin/Downloads/realm-swift-0.94.0/osx/swift-1.2",
+					"/Users/Kevin/Downloads/realm-swift-0.94.0/osx/swift-2.0",
+					"/Users/Kevin/Downloads/realm-swift-0.94.0/watchos",
+					"/Users/Kevin/Downloads/Make-School-Notes-master",
 				);
 				INFOPLIST_FILE = PhotoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		0AC172F21B6006E3000DED70 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PhotoAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoApp.app/PhotoApp";
-			};
-			name = Debug;
-		};
-		0AC172F31B6006E3000DED70 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = PhotoAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoApp.app/PhotoApp";
 			};
 			name = Release;
 		};
@@ -498,15 +441,6 @@
 			buildConfigurations = (
 				0AC172EF1B6006E3000DED70 /* Debug */,
 				0AC172F01B6006E3000DED70 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0AC172F11B6006E3000DED70 /* Build configuration list for PBXNativeTarget "PhotoAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0AC172F21B6006E3000DED70 /* Debug */,
-				0AC172F31B6006E3000DED70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
