@@ -13,7 +13,7 @@ import Foundation
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    
+
     // initialize the date formatter only once, using a static computed property
     static var dateFormatter: NSDateFormatter = {
         var formatter = NSDateFormatter()
@@ -21,14 +21,14 @@ class TableViewCell: UITableViewCell {
         return formatter
         }()
     
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var titleLabel: UITextField!
     
     var note: Note? {
         didSet {
-            if let note = note, titleLabel = titleLabel, dateLabel = dateLabel{
-                self.titleLabel.text = note.title
+            if let note = note, dateLabel = dateLabel, titleLabel = titleLabel{
                 self.dateLabel.text = TableViewCell.dateFormatter.stringFromDate(note.modificationDate)
+                self.titleLabel.text = note.title
             }
         }
     }

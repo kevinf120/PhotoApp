@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A3C71B91B62F59A0026C6D2 /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C71B81B62F59A0026C6D2 /* StyleConstants.swift */; };
+		0A5100931B7563FC00C9971A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5100921B7563FC00C9971A /* AVFoundation.framework */; };
+		0A5100951B75640200C9971A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5100941B75640200C9971A /* CoreData.framework */; };
+		0A5100971B75642500C9971A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5100961B75642500C9971A /* CoreLocation.framework */; };
+		0A5100991B75642B00C9971A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5100981B75642B00C9971A /* CoreText.framework */; };
+		0A51009B1B75643300C9971A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A51009A1B75643300C9971A /* GLKit.framework */; };
+		0A51009D1B75643900C9971A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A51009C1B75643900C9971A /* ImageIO.framework */; };
+		0A51009F1B75644000C9971A /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A51009E1B75644000C9971A /* libc++.dylib */; };
+		0A5100A11B75644E00C9971A /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5100A01B75644E00C9971A /* libicucore.dylib */; };
+		0A5100A31B75645500C9971A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5100A21B75645500C9971A /* libz.dylib */; };
+		0A5100A51B75645B00C9971A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5100A41B75645B00C9971A /* OpenGLES.framework */; };
+		0A5100A71B7564D200C9971A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5100A61B7564D200C9971A /* QuartzCore.framework */; };
+		0A5100A91B7564D900C9971A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5100A81B7564D900C9971A /* SystemConfiguration.framework */; };
+		0A7023B81B7E9930006B70BF /* WorldMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7023B71B7E9930006B70BF /* WorldMapViewController.swift */; };
 		0A9D6F3A1B67DF83000E1293 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D6F391B67DF83000E1293 /* Note.swift */; };
-		0ABBF7BD1B6AAE1B00B7DF98 /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABBF7BC1B6AAE1B00B7DF98 /* PhotoTakingHelper.swift */; };
 		0AC172D51B6006E3000DED70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172D41B6006E3000DED70 /* AppDelegate.swift */; };
 		0AC172D71B6006E3000DED70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172D61B6006E3000DED70 /* ViewController.swift */; };
 		0AC172DA1B6006E3000DED70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC172D81B6006E3000DED70 /* Main.storyboard */; };
@@ -17,6 +28,8 @@
 		0AC172DF1B6006E3000DED70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AC172DD1B6006E3000DED70 /* LaunchScreen.xib */; };
 		0AC172F71B600942000DED70 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC172F61B600942000DED70 /* MapViewController.swift */; };
 		0AD485271B66DDE300AD3755 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD485261B66DDE300AD3755 /* TableViewCell.swift */; };
+		0ADF36E01B7F5822007F9C0D /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF36DF1B7F5822007F9C0D /* PhotoTakingHelper.swift */; };
+		0ADF36E21B7F592A007F9C0D /* StyleConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADF36E11B7F592A007F9C0D /* StyleConstants.swift */; };
 		0AE9F9AE1B6C027C00EE65EE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE9F9AD1B6C027C00EE65EE /* Realm.framework */; };
 		0AE9F9AF1B6C027C00EE65EE /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE9F9AD1B6C027C00EE65EE /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0AE9F9B21B6C028A00EE65EE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AE9F9B11B6C028A00EE65EE /* RealmSwift.framework */; };
@@ -39,9 +52,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0A3C71B81B62F59A0026C6D2 /* StyleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleConstants.swift; path = ../../../../Downloads/MakeSchoolNotes/MakeSchoolNotes/Constants/StyleConstants.swift; sourceTree = "<group>"; };
+		0A5100921B7563FC00C9971A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0A5100941B75640200C9971A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0A5100961B75642500C9971A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0A5100981B75642B00C9971A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0A51009A1B75643300C9971A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		0A51009C1B75643900C9971A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		0A51009E1B75644000C9971A /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		0A5100A01B75644E00C9971A /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		0A5100A21B75645500C9971A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0A5100A41B75645B00C9971A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0A5100A61B7564D200C9971A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0A5100A81B7564D900C9971A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0A7023B71B7E9930006B70BF /* WorldMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldMapViewController.swift; sourceTree = "<group>"; };
 		0A9D6F391B67DF83000E1293 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		0ABBF7BC1B6AAE1B00B7DF98 /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
 		0AC172CF1B6006E3000DED70 /* PhotoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC172D31B6006E3000DED70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AC172D41B6006E3000DED70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +77,8 @@
 		0AC172EA1B6006E3000DED70 /* PhotoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppTests.swift; sourceTree = "<group>"; };
 		0AC172F61B600942000DED70 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		0AD485261B66DDE300AD3755 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		0ADF36DF1B7F5822007F9C0D /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoTakingHelper.swift; path = ../../../PhotoTakingHelper.swift; sourceTree = "<group>"; };
+		0ADF36E11B7F592A007F9C0D /* StyleConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleConstants.swift; path = ../../../../.Trash/StyleConstants.swift; sourceTree = "<group>"; };
 		0AE9F9AD1B6C027C00EE65EE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../Downloads/realm-swift-0.94.0/ios/swift-1.2/Realm.framework"; sourceTree = "<group>"; };
 		0AE9F9B11B6C028A00EE65EE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../Downloads/realm-swift-0.94.0/ios/swift-1.2/RealmSwift.framework"; sourceTree = "<group>"; };
 		28A5560B0C77C46A8CD87364 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +90,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5100A91B7564D900C9971A /* SystemConfiguration.framework in Frameworks */,
+				0A5100A71B7564D200C9971A /* QuartzCore.framework in Frameworks */,
+				0A5100A51B75645B00C9971A /* OpenGLES.framework in Frameworks */,
+				0A5100A31B75645500C9971A /* libz.dylib in Frameworks */,
+				0A5100A11B75644E00C9971A /* libicucore.dylib in Frameworks */,
+				0A51009F1B75644000C9971A /* libc++.dylib in Frameworks */,
+				0A51009D1B75643900C9971A /* ImageIO.framework in Frameworks */,
+				0A51009B1B75643300C9971A /* GLKit.framework in Frameworks */,
+				0A5100991B75642B00C9971A /* CoreText.framework in Frameworks */,
+				0A5100971B75642500C9971A /* CoreLocation.framework in Frameworks */,
+				0A5100951B75640200C9971A /* CoreData.framework in Frameworks */,
+				0A5100931B7563FC00C9971A /* AVFoundation.framework in Frameworks */,
 				0AE9F9B21B6C028A00EE65EE /* RealmSwift.framework in Frameworks */,
 				0AE9F9AE1B6C027C00EE65EE /* Realm.framework in Frameworks */,
 			);
@@ -96,17 +134,16 @@
 		0AC172D11B6006E3000DED70 /* PhotoApp */ = {
 			isa = PBXGroup;
 			children = (
+				0AD3AAAA1B71286F00034E98 /* Views */,
+				0AD3AAA81B71282D00034E98 /* Entities */,
+				0AD3AAA61B71280F00034E98 /* Phototaking */,
+				0AD3AAA51B7127E600034E98 /* ViewControllers */,
 				0AC172D41B6006E3000DED70 /* AppDelegate.swift */,
-				0AC172D61B6006E3000DED70 /* ViewController.swift */,
-				0A9D6F391B67DF83000E1293 /* Note.swift */,
-				0AC172F61B600942000DED70 /* MapViewController.swift */,
-				0ABBF7BC1B6AAE1B00B7DF98 /* PhotoTakingHelper.swift */,
 				0AC172D81B6006E3000DED70 /* Main.storyboard */,
-				0AD485261B66DDE300AD3755 /* TableViewCell.swift */,
 				0AC172DB1B6006E3000DED70 /* Images.xcassets */,
 				0AC172DD1B6006E3000DED70 /* LaunchScreen.xib */,
+				0ADF36E11B7F592A007F9C0D /* StyleConstants.swift */,
 				0AC172D21B6006E3000DED70 /* Supporting Files */,
-				0A3C71B81B62F59A0026C6D2 /* StyleConstants.swift */,
 			);
 			path = PhotoApp;
 			sourceTree = "<group>";
@@ -136,9 +173,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0AD3AAA51B7127E600034E98 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AC172D61B6006E3000DED70 /* ViewController.swift */,
+				0A7023B71B7E9930006B70BF /* WorldMapViewController.swift */,
+				0AC172F61B600942000DED70 /* MapViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0AD3AAA61B71280F00034E98 /* Phototaking */ = {
+			isa = PBXGroup;
+			children = (
+				0ADF36DF1B7F5822007F9C0D /* PhotoTakingHelper.swift */,
+			);
+			name = Phototaking;
+			sourceTree = "<group>";
+		};
+		0AD3AAA81B71282D00034E98 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0A9D6F391B67DF83000E1293 /* Note.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		0AD3AAAA1B71286F00034E98 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AD485261B66DDE300AD3755 /* TableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		7E50EF699014BB36238B99FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A5100A81B7564D900C9971A /* SystemConfiguration.framework */,
+				0A5100A61B7564D200C9971A /* QuartzCore.framework */,
+				0A5100A41B75645B00C9971A /* OpenGLES.framework */,
+				0A5100A21B75645500C9971A /* libz.dylib */,
+				0A5100A01B75644E00C9971A /* libicucore.dylib */,
+				0A51009E1B75644000C9971A /* libc++.dylib */,
+				0A51009C1B75643900C9971A /* ImageIO.framework */,
+				0A51009A1B75643300C9971A /* GLKit.framework */,
+				0A5100981B75642B00C9971A /* CoreText.framework */,
+				0A5100961B75642500C9971A /* CoreLocation.framework */,
+				0A5100941B75640200C9971A /* CoreData.framework */,
+				0A5100921B7563FC00C9971A /* AVFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -264,10 +347,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AD485271B66DDE300AD3755 /* TableViewCell.swift in Sources */,
-				0A3C71B91B62F59A0026C6D2 /* StyleConstants.swift in Sources */,
 				0AC172D71B6006E3000DED70 /* ViewController.swift in Sources */,
 				0A9D6F3A1B67DF83000E1293 /* Note.swift in Sources */,
-				0ABBF7BD1B6AAE1B00B7DF98 /* PhotoTakingHelper.swift in Sources */,
+				0A7023B81B7E9930006B70BF /* WorldMapViewController.swift in Sources */,
+				0ADF36E01B7F5822007F9C0D /* PhotoTakingHelper.swift in Sources */,
+				0ADF36E21B7F592A007F9C0D /* StyleConstants.swift in Sources */,
 				0AC172D51B6006E3000DED70 /* AppDelegate.swift in Sources */,
 				0AC172F71B600942000DED70 /* MapViewController.swift in Sources */,
 			);
